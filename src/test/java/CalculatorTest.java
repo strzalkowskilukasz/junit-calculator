@@ -48,8 +48,8 @@ public class CalculatorTest {
 		double różnica = classUnderTest.subtract(a, b);
 		double różnica2 = classUnderTest.subtract(c, d);
 
-		Assert.assertEquals("Bledny wynik sumowania", 1.0, różnica, 0.001);
-		Assert.assertEquals("Bledny wynik sumowania", 3.3, różnica2, 0.001);
+		Assert.assertEquals("Bledny wynik odejmowania", 1.0, różnica, 0.001);
+		Assert.assertEquals("Bledny wynik odejmowania", 3.3, różnica2, 0.001);
 	}
 
 	@Test
@@ -67,9 +67,9 @@ public class CalculatorTest {
 		double iloczyn2 = classUnderTest.multiply(c, d);
 		double iloczyn3 = classUnderTest.multiply(e, f);
 
-		Assert.assertEquals("Bledny wynik sumowania", 12.0, iloczyn, 0.001);
-		Assert.assertEquals("Bledny wynik sumowania", 5.4, iloczyn2, 0.001);
-		Assert.assertEquals("Bledny wynik sumowania", 0, iloczyn3, 0.001);
+		Assert.assertEquals("Bledny wynik mnozenia", 12.0, iloczyn, 0.001);
+		Assert.assertEquals("Bledny wynik mnozenia", 5.4, iloczyn2, 0.001);
+		Assert.assertEquals("Bledny wynik mnozenia", 0, iloczyn3, 0.001);
 	}
 	@Test
 	public void testDzielenia() throws Exception {
@@ -86,8 +86,8 @@ public class CalculatorTest {
 		double iloraz2 = classUnderTest.divide(c, d);
 
 
-		Assert.assertEquals("Bledny wynik sumowania", 3.0, iloraz, 0.001);
-		Assert.assertEquals("Bledny wynik sumowania", 10.0, iloraz2, 0.001);
+		Assert.assertEquals("Bledny wynik dzielenia", 3.0, iloraz, 0.001);
+		Assert.assertEquals("Bledny wynik dzielenia", 10.0, iloraz2, 0.001);
 
 		}
 
@@ -99,7 +99,5 @@ public class CalculatorTest {
 
 		double iloraz3 = classUnderTest.divide(e, f);
 		}
-
-
 	}
 
